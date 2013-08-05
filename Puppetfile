@@ -36,3 +36,16 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "macvim",	"1.0.0"
+github "wget",		"1.0.0"
+github "iterm2",	"1.0.2"
+github "adium",		"1.1.1"
+github "shiftit",	"0.0.2"
+github "gitx", 		"1.2.0"
+github "limechat",	"1.1.0", :repo => "dieterdemeyer/puppet-limechat"
+github "mysql",		"1.1.1"
+github "firefox",	"1.1.0"
+github "keepassx",	"1.0.0"
+github "vagrant",	"2.0.7"
+
