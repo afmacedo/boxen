@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-adium
+  specs:
+    adium (1.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
@@ -14,6 +19,11 @@ GITHUBTARBALL
     dnsmasq (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-firefox
+  specs:
+    firefox (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-gcc
   specs:
     gcc (2.0.1)
@@ -24,6 +34,11 @@ GITHUBTARBALL
     git (1.2.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-gitx
+  specs:
+    gitx (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.4.1)
@@ -32,6 +47,26 @@ GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
     hub (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-keepassx
+  specs:
+    keepassx (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-macvim
+  specs:
+    macvim (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -59,14 +94,34 @@ GITHUBTARBALL
     ruby (6.3.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-shiftit
+  specs:
+    shiftit (0.0.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (2.0.7)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
+
+GITHUBTARBALL
+  remote: dieterdemeyer/puppet-limechat
+  specs:
+    limechat (1.1.0)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -79,20 +134,31 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
+  adium (= 1.1.1)
   autoconf (= 1.0.0)
   boxen (= 3.0.1)
   dnsmasq (= 1.0.0)
+  firefox (= 1.1.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
+  gitx (= 1.2.0)
   homebrew (= 1.4.1)
   hub (= 1.0.3)
   inifile (= 1.0.0)
+  iterm2 (= 1.0.2)
+  keepassx (= 1.0.0)
+  limechat (= 1.1.0)
+  macvim (= 1.0.0)
+  mysql (= 1.1.1)
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.3.0)
+  shiftit (= 0.0.2)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  vagrant (= 2.0.7)
+  wget (= 1.0.0)
   xquartz (= 1.1.0)
 

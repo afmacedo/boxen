@@ -48,4 +48,4 @@ github "mysql",		"1.1.1"
 github "firefox",	"1.1.0"
 github "keepassx",	"1.0.0"
 github "vagrant",	"2.0.7"
-
+github "chrome",	"1.1.1"
