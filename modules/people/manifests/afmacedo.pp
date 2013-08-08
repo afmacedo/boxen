@@ -17,6 +17,7 @@ class people::afmacedo {
   $dotfiles = "${home}/dotfiles"
   $bundle = "${dotfiles}/vim/bundle"
   $nerdtree = "${bundle}/nerdtree"
+  $puppetvim = "${bundle}/puppet-syntax-vim"
 
   file { $dotfiles:
     ensure => "directory",
@@ -29,7 +30,7 @@ class people::afmacedo {
     require => File[$dotfiles]
   }
 
-  file { [ $bundle, $nerdtree ]:
+  file { [ $bundle, $nerdtree, $puppetvim ]:
     ensure => "directory",
     owner => $::luser,
     group => "staff"
@@ -39,7 +40,12 @@ class people::afmacedo {
     source => "scrooloose/nerdtree.git",
     require => File[$nerdtree]
   }
- 
+
+  repository { $puppetvim:
+    source => "puppetlabs/puppet-syntax-vim.git",
+    require => File[$puppetvim]
+  }
+
   exec { "make install":
     cwd => "${dotfiles}",
     command => "/usr/bin/make",
