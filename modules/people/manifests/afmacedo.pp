@@ -1,17 +1,23 @@
 class people::afmacedo {
   # useful stuff
   include macvim
+  #include vim
   include wget
   include iterm2::dev
   include adium
-  include shiftit
-  include gitx
+  #include shiftit
+  include slate
   include limechat
   include mysql
   #include firefox
+  #include gitx
+  include sourcetree
   include keepassx
   include chrome
-  #include vagrant
+  include vagrant
+  include nodejs
+  include nginx
+  include virtualbox
 
   $home = "/Users/${::boxen_user}"
   $dotfiles = "${home}/dotfiles"
