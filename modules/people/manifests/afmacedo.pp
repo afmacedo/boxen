@@ -18,12 +18,10 @@ class people::afmacedo {
   include nodejs
   include nginx
   include virtualbox
+  include vim
 
   $home = "/Users/${::boxen_user}"
   $dotfiles = "${home}/dotfiles"
-  $bundle = "${dotfiles}/vim/bundle"
-  $nerdtree = "${bundle}/nerdtree"
-  $puppetvim = "${bundle}/puppet-syntax-vim"
 
   file { $dotfiles:
     ensure => "directory",
@@ -36,21 +34,11 @@ class people::afmacedo {
     require => File[$dotfiles]
   }
 
-  file { [ $bundle, $nerdtree, $puppetvim ]:
-    ensure => "directory",
-    owner => $::luser,
-    group => "staff"
-  }
-
-  repository { $nerdtree:
-    source => "scrooloose/nerdtree.git",
-    require => File[$nerdtree]
-  }
-
-  repository { $puppetvim:
-    source => "puppetlabs/puppet-syntax-vim.git",
-    require => File[$puppetvim]
-  }
+  vim::bundle { [
+    "scrooloose/nerdtree",
+    "scrooloose/syntastic",
+    "puppetlabs/puppet-syntax-vim"
+  ]: }
 
   exec { "make install":
     cwd => "${dotfiles}",
