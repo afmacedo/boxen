@@ -37,7 +37,13 @@ class people::afmacedo {
   vim::bundle { [
     "scrooloose/nerdtree",
     "scrooloose/syntastic",
-    "puppetlabs/puppet-syntax-vim"
+    "puppetlabs/puppet-syntax-vim",
+    "jelera/vim-javascript-syntax",
+    "juvenn/mustache.vim",
+    "guileen/vim-node",
+    "Raimondi/delimitMate",
+    "digitaltoad/vim-jade",
+    "hdima/python-syntax"
   ]: }
 
   exec { "make install":
