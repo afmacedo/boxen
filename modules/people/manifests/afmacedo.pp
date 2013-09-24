@@ -19,6 +19,7 @@ class people::afmacedo {
   include nginx
   include virtualbox
   include vim
+  include caffeine
 
   $home = "/Users/${::boxen_user}"
   $dotfiles = "${home}/dotfiles"

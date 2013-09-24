@@ -36,6 +36,7 @@ github "xquartz",    "1.1.0"
 github "sourcetree", "1.0.0"
 github "slate",      "1.0.0"
 github "vim",        "1.0.5"
+github "caffeine",   "1.0.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
