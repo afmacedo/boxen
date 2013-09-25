@@ -44,6 +44,7 @@ class people::afmacedo {
     "guileen/vim-node",
     "Raimondi/delimitMate",
     "digitaltoad/vim-jade",
+    "mattn/emmet-vim",
     "hdima/python-syntax"
   ]: }
 
