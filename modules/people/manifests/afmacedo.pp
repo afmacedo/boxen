@@ -45,7 +45,9 @@ class people::afmacedo {
     "Raimondi/delimitMate",
     "digitaltoad/vim-jade",
     "mattn/emmet-vim",
-    "hdima/python-syntax"
+    "hdima/python-syntax",
+    "kchmck/vim-coffee-script",
+    "tpope/vim-sensible"
   ]: }
 
   exec { "make install":
@@ -53,5 +55,9 @@ class people::afmacedo {
     command => "/usr/bin/make",
     creates => "${home}/.bashrc",
     require => Repository[$dotfiles]
+  }
+
+  service { "nginx":
+    ensure => "running"
   }
 }
