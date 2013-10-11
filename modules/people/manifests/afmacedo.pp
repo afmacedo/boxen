@@ -88,6 +88,14 @@ class people::afmacedo {
     source => 'SublimeText/IndentGuides'
   }
 
+  sublime_text_3::package { 'DotfilesSyntaxHighlighting':
+    source => 'mattbanks/dotfiles-syntax-highlighting-st2'
+  }
+
+  sublime_text_3::package { 'PuppetSyntaxHighlighting':
+    source => 'eklein/sublime-text-puppet'
+  }
+
   exec { "make install":
     cwd => "${dotfiles}",
     command => "/usr/bin/make",
