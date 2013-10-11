@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: afmacedo/puppet-sublime_text_3
+  specs:
+    sublime_text_3 (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-adium
   specs:
     adium (1.1.1)
@@ -173,6 +178,7 @@ DEPENDENCIES
   slate (= 1.0.0)
   sourcetree (= 1.0.0)
   stdlib (= 4.1.0)
+  sublime_text_3 (= 1.0.1)
   sudo (= 1.0.0)
   vagrant (= 2.0.7)
   vim (= 1.0.5)

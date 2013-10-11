@@ -20,6 +20,8 @@ class people::afmacedo {
   include virtualbox
   include vim
   include caffeine
+  include sublime_text_3
+  include sublime_text_3::package_control
 
   $home = "/Users/${::boxen_user}"
   $dotfiles = "${home}/dotfiles"
@@ -49,6 +51,42 @@ class people::afmacedo {
     "kchmck/vim-coffee-script",
     "tpope/vim-sensible"
   ]: }
+
+  sublime_text_3::package { 'Easyballs':
+    source => 'afmacedo/sublime-themes'
+  }
+
+  sublime_text_3::package { 'Alignment':
+    source => 'wbond/sublime_alignment'
+  }
+
+  sublime_text_3::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
+
+  sublime_text_3::package { 'ChangeQuotes':
+    source => 'colinta/SublimeChangeQuotes'
+  }
+
+  sublime_text_3::package { 'SideBarEnhancements':
+    source => 'titoBouzout/SideBarEnhancements'
+  }
+
+  sublime_text_3::package { 'BufferScroll':
+    source => 'titoBouzout/BufferScroll'
+  }
+
+  sublime_text_3::package { 'DetectSyntax':
+    source => 'phillipkoebbe/DetectSyntax'
+  }
+
+  sublime_text_3::package { 'ExpandSelectionToQuotes':
+    source => 'kek/sublime-expand-selection-to-quotes'
+  }
+
+  sublime_text_3::package { 'IndentGuides':
+    source => 'SublimeText/IndentGuides'
+  }
 
   exec { "make install":
     cwd => "${dotfiles}",
