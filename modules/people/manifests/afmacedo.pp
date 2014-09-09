@@ -1,6 +1,6 @@
 class people::afmacedo {
   # useful stuff
-  include macvim
+  # include macvim
   #include vim
   include wget
   include iterm2::dev
@@ -11,8 +11,9 @@ class people::afmacedo {
   include mysql
   #include firefox
   #include gitx
-  include sourcetree
-  include keepassx
+  #include sourcetree
+  #include keepassx
+  include onepassword
   include chrome
   include vagrant
   include nodejs
