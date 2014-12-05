@@ -50,7 +50,7 @@ github "firefox",	 "1.2.2"
 #github "keepassx",	 "1.0.0"
 github "vagrant",	 "3.2.0"
 github "chrome",	 "1.2.0"
-github "virtualbox",     "1.0.13"
+github "virtualbox",     "1.0.14", :repo => "afmacedo/puppet-virtualbox"
 github "sublime_text_3", "1.0.1", :repo => "afmacedo/puppet-sublime_text_3"
 github "onepassword",    "1.1.2"
 

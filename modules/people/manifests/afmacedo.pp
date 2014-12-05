@@ -43,14 +43,15 @@ class people::afmacedo {
     "scrooloose/syntastic",
     "puppetlabs/puppet-syntax-vim",
     "jelera/vim-javascript-syntax",
-    "juvenn/mustache.vim",
+    #"juvenn/mustache.vim",
     "guileen/vim-node",
     "Raimondi/delimitMate",
-    "digitaltoad/vim-jade",
+    #"digitaltoad/vim-jade",
     "mattn/emmet-vim",
     "hdima/python-syntax",
-    "kchmck/vim-coffee-script",
-    "tpope/vim-sensible"
+    #"kchmck/vim-coffee-script",
+    "tpope/vim-sensible",
+    "plasticboy/vim-markdown"
   ]: }
 
   sublime_text_3::package { 'Easyballs':
@@ -77,10 +78,6 @@ class people::afmacedo {
     source => 'titoBouzout/BufferScroll'
   }
 
-  sublime_text_3::package { 'DetectSyntax':
-    source => 'phillipkoebbe/DetectSyntax'
-  }
-
   sublime_text_3::package { 'ExpandSelectionToQuotes':
     source => 'kek/sublime-expand-selection-to-quotes'
   }
@@ -104,7 +101,7 @@ class people::afmacedo {
     require => Repository[$dotfiles]
   }
 
-  service { "nginx":
-    ensure => "running"
-  }
+  #  service { "nginx":
+  #    ensure => "running"
+  #  }
 }
